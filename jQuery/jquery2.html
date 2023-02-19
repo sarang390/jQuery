@@ -1,0 +1,26 @@
+<html>
+<head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+$("button").click(function(){
+$("#para").prepend("<b>jQuery</b>");
+$("#para").append("<b>append() function</b>.");
+$("#para").after('<h3>This is the newly inserted heading</h3>');
+$("#newhead").remove();
+});
+});
+</script>
+</head>
+<body>
+<div align="center">
+</div>
+<h3>Complete the sentence:</h3>
+<p id="para">is a javascript library that enables the 
+content to be appended after the inner content in the 
+selected element using the</p><br>
+<h2 id="newhead">This heading would be removed.</h2>
+<button id="b">Click here</button>
+</body>
+</html>

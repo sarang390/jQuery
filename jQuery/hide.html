@@ -1,0 +1,18 @@
+<html>
+<head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$("#hide_header").click(function(){  /*selects the hide_header button and 
+binds it to the click function*/
+$("h1").hide(); //hides the <h1> header
+});
+});
+</script>
+</head>
+<body>
+<h1>I am the header</h1>
+<hr>
+<input type="button" id="hide_header" value='Hide the header'/>
+</body>
+</html>

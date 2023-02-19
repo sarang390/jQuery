@@ -1,0 +1,50 @@
+<html>
+<head>
+<style>
+body{
+background-color:white;
+}
+h2
+{
+font-family:verdana;
+font-size:30px;
+color:darkcyan;
+text-align:center;
+}
+h3
+{
+text-align:center;
+font-family:verdana;
+color:darkcyan;
+font-size:20px;
+}
+#para1
+{
+font-family:verdana;
+font-size:18px;
+text-align:center;
+color:darkcyan;
+}
+</style>
+<script>
+function over(img,imgsrc)
+{
+img.src=imgsrc;
+}
+function out(img,imgsrc)
+{
+img.src=imgsrc;
+}
+</script>
+</head>
+<body>
+<h2>Product Details</h2>
+<hr><hr>
+<h3>Check out the latest products on our website.Exciting Discounts, Hurry!!</h3>
+<div style="position:absolute;top:180;left:400px">
+<p ID="para1">Move the mouse over the product image</p>
+<img ID="productImage1" src="img1.jpg" height="150" onmouseover="over(this,'anime.jpg')" onmouseout="out(this,'img1.jpg')"/>
+<img ID="productImage2" src="img2.png" height="150" onmouseover="over(this,'background.png')" onmouseout="out(this,'img2.png')"/>
+</div>
+</body>
+</html>

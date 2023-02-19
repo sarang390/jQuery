@@ -1,0 +1,55 @@
+<html>
+<head>
+<style>
+h2
+{
+font-family:verdana;
+font-size:30px;
+text-align:center;
+}
+h3
+{
+font-family:verdana;
+color:orange;
+font-size:20px;
+text-align:center;
+}
+#para1
+{
+font-family:verdana;
+font-size:14px;
+color:blue;
+}
+</style>
+<script>
+function over(img,imgsrc)
+{
+if(document.images)
+{
+document.images[img].src=imgsrc;
+}
+}
+function out(img,imgsrc)
+{
+if(document.images)
+{
+document.images[img].src=imgsrc;
+}
+}
+</script>
+</head>
+<body>
+<h2>Product Categories</h2>
+<hr><hr>
+<h3>Check out the latest products on our website.Exciting Discounts, Hurry!!</h3>
+<div style="position:absolute;top:180;left:400px">
+<p ID="para1">Choose the desired product image to view the product details</p>
+<a href="#" onmouseover="over('productImage1','img1.jpg');"onmouseout="out('productImage1','anime.jpg');>
+<img ID="productImage1" src="anime.jpg" border="0"/>
+</a>
+<a href="#" onmouseover="over('productImage2','img2.png');"onmouseout="out('productImage1','background.png');>
+<img ID="productImage2" src="background.png" border="0"/>
+</a>
+</div>
+</body>
+</html>

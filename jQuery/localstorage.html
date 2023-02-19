@@ -1,0 +1,12 @@
+<div ID="str"></div>
+<script>
+if(typeof(Storage)!=="undefined")
+{
+localStorage.name="John";
+document.getElementById("str").innerHTML="Name: " + localStorage.name;
+}
+else
+{
+document.getElementById("str").innerHTML="Your browser does not support local storage";
+}
+</script>

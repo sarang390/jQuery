@@ -1,0 +1,21 @@
+<html>
+<head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$(".btn1").click(function(){
+$("p").fadeOut();
+});
+$(".btn2").click(function(){
+$("p").fadeIn();
+});
+});
+</script>
+</head>
+<body>
+<p>Fade me away</p>
+<button class="btn1">Hide</button>
+<button class="btn2">Restore</button>
+</body>
+</html>
